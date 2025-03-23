@@ -44,7 +44,7 @@ ${formData.message}
     // 4. Prepare the parameters for sending the email
     const params = {
       Destination: {
-        ToAddresses: ['info@atbcon.com'], // Replace or add your recipients
+        ToAddresses: ['info@atbcon.com'], // Replace or add your recipient
       },
       Message: {
         Body: {
