@@ -147,7 +147,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 100px;
+  max-height: 50px;
 }
 
 .header .logo h1 {
@@ -1042,6 +1042,22 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+/* 1) Default text color for valid (non-placeholder) options */
+.placeholder-text option {
+  color: #000; /* or your preferred text color */
+}
+
+/* 2) If the select is still invalid (i.e., user hasn't chosen anything),
+   make its text appear lighter (like a placeholder). */
+.placeholder-text:invalid {
+  color: #999; /* or use your own lighter color or color-mix(...) */
+}
+
+/* 3) Specifically style the first option (the placeholder) in case
+   the browser shows it in the dropdown. */
+.placeholder-text option[value=""] {
+  color: #999; /* same lighter color */
 }
 
 /*--------------------------------------------------------------

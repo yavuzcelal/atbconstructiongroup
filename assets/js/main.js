@@ -83,46 +83,47 @@
   document.addEventListener('scroll', toggleScrollTop);
 
 // Email 
-  document.querySelector('.php-email-form').addEventListener('submit', async function (event) {
+document.querySelector('.php-email-form').addEventListener('submit', async function (event) {
   event.preventDefault();
 
   const form = event.target;
   const formData = {
     name: form.name.value,
+    phoneNumber: form.phoneNumber.value,
     email: form.email.value,
+    projectBudget: form.projectBudget.value,
+    project_type: form.project_type.value,
     subject: form.subject.value,
     message: form.message.value,
   };
 
-  // Show loading message
+  // Show loading, hide error/success messages
   document.querySelector('.loading').style.display = 'block';
   document.querySelector('.error-message').style.display = 'none';
   document.querySelector('.sent-message').style.display = 'none';
 
   try {
-    const response = await fetch('/.netlify/functions/sendEmail', {
+    const response = await fetch('/.cloudflare/functions/sendEmail', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
     });
 
     const result = await response.json();
-
     if (response.ok) {
-      // Hide loading and show success message
       document.querySelector('.loading').style.display = 'none';
       document.querySelector('.sent-message').style.display = 'block';
+      form.reset();
     } else {
       throw new Error(result.error || 'An error occurred');
     }
-    form.reset();
   } catch (error) {
-    // Hide loading and show error message
     document.querySelector('.loading').style.display = 'none';
     document.querySelector('.error-message').textContent = error.message;
     document.querySelector('.error-message').style.display = 'block';
   }
 });
+
 
   /**
    * Animation on scroll function and init

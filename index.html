@@ -51,12 +51,15 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="index.html/#about">About</a></li>
-          <li><a href="index.html/#portfolio">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a aria-label="Chat on WhatsApp" href="https://wa.me/16475627118"> <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg"/><a></li>
-
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#portfolio">Projects</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+<li>
+  <a aria-label="Chat on WhatsApp" href="https://wa.me/16475627118">
+    <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg"/>
+  </a>
+</li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -436,32 +439,44 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="/.netlify/functions/sendEmail" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="/.cloudflare/functions/sendEmail" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
-
+                
                 <div class="col-md-6">
-                  <input type="text" name="Phone Number" class="form-control" placeholder="Your Phone Number" required="">
+                  <input type="text" name="phoneNumber" class="form-control" placeholder="Your Phone Number" required>
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
+                
                 <div class="col-md-6">
-                  <input type="text" name="Project Budget" class="form-control" placeholder="Project Budget (Approx.)">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                 </div>
-
+                
+                <div class="col-md-6">
+                  <input type="text" name="projectBudget" class="form-control" placeholder="Project Budget (Approx.)">
+                </div>
+                
+                <div class="col-md-6">
+                  <select name="project_type" class="form-control" required>
+                    <option value="Select Project Type">Select Project Type</option>
+                    <option value="deck">Deck</option>
+                    <option value="fence">Fence</option>
+                    <option value="gate">Gate</option>
+                    <option value="gazebo">Gazebo</option>
+                    <option value="pergola">Pergola</option>
+                    <option value="roof">Roof</option>
+                  </select>
+                </div>
+                
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                 </div>
-
+                
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Detailsl of projects (250 sqft. deck, 95 lnft. fence etc.)" required=""></textarea>
-                </div>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Details of projects (250 sqft. deck, 95 lnft. fence etc.)" required></textarea>
+                </div>                
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>

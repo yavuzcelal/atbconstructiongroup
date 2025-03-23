@@ -42,11 +42,16 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services" class="active">Services</a></li>
           <li><a href="index.html#portfolio">Projects</a></li>
+          <li><a href="index.html#services">Services</a></li>
           <li><a href="index.html#contact">Contact</a></li>
+          <li>
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/16475627118">
+              <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg"/>
+            </a>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -115,28 +120,42 @@
     </section>
     <!-- End Service Details Section -->
 
-    <!-- Related Projects Section -->
-    <section class="related-projects section">
+    <!-- ======= Deck Projects Section ======= -->
+    <section id="portfolio" class="portfolio section">
       <div class="container" data-aos="fade-up">
+        <!-- Section Title -->
         <div class="section-title">
-          <h2>Related Projects</h2>
+          <h2>Our Pergola Projects</h2>
+          <p>Explore some of our recent work, showcasing our commitment to quality and creativity.</p>
         </div>
-        <div class="row gy-4">
-          <!-- Project Item -->
-          <div class="col-lg-5 col-md-6">
-            <div class="portfolio-item">
-              <a href="project-details.html">
-                <img src="assets/img/portfolio/deck-project1.jpg" class="img-fluid" alt="Deck Project 1">
-                <div class="portfolio-info">
-                  <h4>Custom Deck in Brampton</h4>
-                </div>
-              </a>
+
+        <!-- Portfolio Items Row -->
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- Mississauga Deck -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pergola">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/pergola/pergola1.jpg" data-gallery="portfolio-pergola" class="glightbox"><img src="assets/img/pergola/pergola1.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>Brampton Pergola Design & Build Project</h4>
+              </div>
             </div>
-          </div>
-          <!-- Add more project items as needed -->
-        </div>
-      </div>
+          </div><!-- End Portfolio Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pergola">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/pergola/pergola21.jpg" data-gallery="portfolio-pergola" class="glightbox"><img src="assets/img/pergola/pergola21.jpg" class="img-fluid" alt=""></a>
+              <a href="assets/img/pergola/pergola22.jpg" data-gallery="portfolio-pergola" class="glightbox d-none"><img src="assets/img/pergola/pergola22.jpg" class="img-fluid" alt=""></a>
+              <a href="assets/img/pergola/pergola23.jpg" data-gallery="portfolio-pergola" class="glightbox d-none"><img src="assets/img/pergola/pergola23.jpg" class="img-fluid" alt=""></a>
+              <a href="assets/img/pergola/pergola24.jpg" data-gallery="portfolio-pergola" class="glightbox d-none"><img src="assets/img/pergola/pergola24.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4>Mississauga Pergola Design & Build Project</h4>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+        </div><!-- End row -->
+      </div><!-- End container -->
     </section>
+    <!-- End Related Projects Section -->
     <!-- End Related Projects Section -->
    <!-- Our Services Section (for Mobile View) -->
    <section class="our-services-mobile section d-block d-lg-none">
