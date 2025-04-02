@@ -14,7 +14,6 @@ export const onRequestPost = async ({ request, env }) => {
     //   email: ...,
     //   projectBudget: ...,
     //   project_type: ...,
-    //   subject: ...,
     //   message: ...
     // }
 
@@ -35,7 +34,6 @@ Phone Number: ${formData.phoneNumber}
 Email: ${formData.email}
 Project Budget: ${formData.projectBudget}
 Project Type(s): ${formData.project_type.join(', ')} 
-Subject: ${formData.subject}
 
 Message:
 ${formData.message}
@@ -55,7 +53,7 @@ ${formData.message}
         },
         Subject: {
           Charset: 'UTF-8',
-          Data: `Contact Form Submission: ${formData.subject}`,
+          Data: `Contact Form Submission: ${formData.name}`,
         },
       },
       Source: 'info@atbcon.com', // Must be a verified "From" address in SES
