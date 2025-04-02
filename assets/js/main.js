@@ -86,14 +86,16 @@
 document.querySelector('.php-email-form').addEventListener('submit', async function (event) {
   event.preventDefault();
 
-  const form = event.target;
+  const selectedProjectTypes = [
+    ...form.querySelectorAll('select[name="project_type[]"] option:checked')
+  ].map(opt => opt.value);
+
   const formData = {
     name: form.name.value,
     phoneNumber: form.phoneNumber.value,
     email: form.email.value,
     projectBudget: form.projectBudget.value,
-    project_type: form.project_type.value,
-    subject: form.subject.value,
+    project_type: selectedProjectTypes, // array of all chosen
     message: form.message.value,
   };
 

@@ -456,7 +456,6 @@
                 
                 <div class="col-md-6">
                   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-
                   <select name="project_type[]" class="form-control js-multi-select" multiple required>
                     <option value="deck">Deck</option>
                     <option value="fence">Fence</option>
@@ -465,20 +464,15 @@
                     <option value="pergola">Pergola</option>
                     <option value="roof">Roof</option>
                   </select>
-                  
-                  <!-- Include jQuery & Select2 JS -->
                   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-                  
                   <script>
                     $(document).ready(function() {
                       $('.js-multi-select').select2({
                         placeholder: "Select Project Type", 
-                        // You can customize further if needed
                       });
                     });
                   </script>
-                  
                 </div>
 
                 <div class="col-md-6">
