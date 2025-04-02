@@ -34,7 +34,7 @@ New message from ${formData.name}:
 Phone Number: ${formData.phoneNumber}
 Email: ${formData.email}
 Project Budget: ${formData.projectBudget}
-Project Type: ${formData.project_type}
+Project Type(s): ${formData.project_type.join(', ')} 
 Subject: ${formData.subject}
 
 Message:
