@@ -116,6 +116,7 @@ document.querySelector('.php-email-form').addEventListener('submit', async funct
     if (response.ok) {
       document.querySelector('.loading').style.display = 'none';
       document.querySelector('.sent-message').style.display = 'block';
+      $('.js-multi-select').val(null).trigger('change');
       form.reset();
     } else {
       throw new Error(result.error || 'An error occurred');

@@ -62,15 +62,7 @@ ${formData.message}
     // 5. Send the email
     const command = new SendEmailCommand(params);
     await client.send(command);
-
-    if (response.ok) {
-      document.querySelector('.loading').style.display = 'none';
-      document.querySelector('.sent-message').style.display = 'block';
-      // Clear the select2 multi-select field:
-      $('.js-multi-select').val(null).trigger('change');
-      form.reset();
-    }
-
+    
     // 6. Return a success response
     return new Response(
       JSON.stringify({ message: 'Your message has been sent successfully!' }),
