@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PTTW5V1RVS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PTTW5V1RVS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PTTW5V1RVS');
+  </script> 
 
-  gtag('config', 'G-PTTW5V1RVS');
-</script> 
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Updated Meta Description -->
+  <meta name="description" content="ATB Construction specializes in crafting exceptional outdoor living spaces, including decks, fences, gates, gazebos, pergolas, and roofs.">
+  <meta name="keywords" content="deck, fence, gate, gazebo, pergola, roof, outdoor living, construction">
+
   <title>ATB Construction - The Art of Outdoor Living Spaces</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -37,15 +38,34 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Structured Data for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ATB Construction Group",
+    "image": "https://atbcon.com/assets/img/logo.png",
+    "telephone": "+1 647 562 7118",
+    "email": "info@atbcon.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "55 Commerce Valley Dr W",
+      "addressLocality": "Thornhill",
+      "addressRegion": "ON",
+      "postalCode": "L3T 7V9",
+      "addressCountry": "CA"
+    },
+    "url": "https://atbcon.com"
+  }
+  </script>
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
+        <img src="assets/img/logo.png" alt="ATB Construction Logo">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -55,25 +75,21 @@
           <li><a href="index.html#portfolio">Projects</a></li>
           <li><a href="index.html#services">Services</a></li>
           <li><a href="index.html#contact">Contact</a></li>
-<li>
-  <a aria-label="Chat on WhatsApp" href="https://wa.me/16475627118">
-    <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg"/>
-  </a>
-</li>
+          <li>
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/16475627118">
+              <img alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.svg"/>
+            </a>
+          </li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></i>
       </nav>
-
     </div>
   </header>
 
   <main class="main">
-
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg.webp" alt="" data-aos="fade-in">
-
+      <img src="assets/img/hero-bg.webp" alt="Outdoor Living Space Background" data-aos="fade-in">
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -83,19 +99,16 @@
           </div>
         </div>
       </div>
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
-
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-6 position-relative d-flex align-items-center order-lg-last" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/deck1/deck1-1.jpg" class="img-fluid flex-shrink-0" alt="">
+            <img src="assets/img/deck1/deck1-1.jpg" class="img-fluid flex-shrink-0" alt="Custom Deck Construction" loading="lazy">
           </div>
-
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
             <h3>About ATB Construction</h3>
             <p>
@@ -125,20 +138,17 @@
               </li>
             </ul>
           </div>
-
         </div>
-
       </div>
+    </section>
+    <!-- /About Section -->
 
-    </section><!-- /About Section -->
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Projects</h2>
         <p>Take a look at some of our recent projects! From stunning decks and elegant pergolas to sturdy fences and custom gates, we bring outdoor spaces to life with craftsmanship and care</p>
-      </div><!-- End Section Title -->
+      </div>
       <div class="container">
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
@@ -149,358 +159,438 @@
             <li data-filter=".filter-gazebo">Gazebo Projects</li>
             <li data-filter=".filter-pergola">Pergola Projects</li>
             <li data-filter=".filter-roof">Roof Projects</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul>
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <!-- Portfolio Item: Deck (Mississauga) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-deck">
               <div class="portfolio-content h-100">
-                <a href="assets/img/deck1/deck1-1.jpg" data-gallery="portfolio-deck" class="glightbox"><img src="assets/img/deck1/deck1-1.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck1/deck1-2.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck1/deck1-2.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck1/deck1-3.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck1/deck1-3.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck1/deck1-5.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck1/deck1-5.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck1/deck1-7.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck1/deck1-7.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck1/deck1-8.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck1/deck1-8.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/deck1/deck1-1.jpg" data-gallery="portfolio-deck" class="glightbox">
+                  <img src="assets/img/deck1/deck1-1.jpg" class="img-fluid" alt="Mississauga Deck Design Project" loading="lazy">
+                </a>
+                <!-- Additional images hidden in lightbox gallery -->
+                <a href="assets/img/deck1/deck1-2.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck1/deck1-2.jpg" class="img-fluid" alt="Additional Mississauga Deck" loading="lazy">
+                </a>
+                <a href="assets/img/deck1/deck1-3.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck1/deck1-3.jpg" class="img-fluid" alt="Additional Mississauga Deck" loading="lazy">
+                </a>
+                <a href="assets/img/deck1/deck1-5.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck1/deck1-5.jpg" class="img-fluid" alt="Additional Mississauga Deck" loading="lazy">
+                </a>
+                <a href="assets/img/deck1/deck1-7.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck1/deck1-7.jpg" class="img-fluid" alt="Additional Mississauga Deck" loading="lazy">
+                </a>
+                <a href="assets/img/deck1/deck1-8.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck1/deck1-8.jpg" class="img-fluid" alt="Additional Mississauga Deck" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Mississauga Deck Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Deck (Vaughan) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-deck">
               <div class="portfolio-content h-100">
-                <a href="assets/img/deck2/deck2-5.jpg" data-gallery="portfolio-deck" class="glightbox"><img src="assets/img/deck2/deck2-5.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck2/deck2-1.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck2/deck2-1.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck2/deck2-2.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck2/deck2-2.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck2/deck2-3.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck2/deck2-3.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck2/deck2-4.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck2/deck2-4.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck2/deck1-6.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck2/deck2-6.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/deck2/deck2-5.jpg" data-gallery="portfolio-deck" class="glightbox">
+                  <img src="assets/img/deck2/deck2-5.jpg" class="img-fluid" alt="Vaughan Deck Design Project" loading="lazy">
+                </a>
+                <a href="assets/img/deck2/deck2-1.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck2/deck2-1.jpg" class="img-fluid" alt="Additional Vaughan Deck" loading="lazy">
+                </a>
+                <a href="assets/img/deck2/deck2-2.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck2/deck2-2.jpg" class="img-fluid" alt="Additional Vaughan Deck" loading="lazy">
+                </a>
+                <a href="assets/img/deck2/deck2-3.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck2/deck2-3.jpg" class="img-fluid" alt="Additional Vaughan Deck" loading="lazy">
+                </a>
+                <a href="assets/img/deck2/deck2-4.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck2/deck2-4.jpg" class="img-fluid" alt="Additional Vaughan Deck" loading="lazy">
+                </a>
+                <a href="assets/img/deck2/deck2-6.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck2/deck2-6.jpg" class="img-fluid" alt="Additional Vaughan Deck" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Vaughan Deck Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Deck (Brampton) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-deck">
               <div class="portfolio-content h-100">
-                <a href="assets/img/deck3/deck3-3.jpg" data-gallery="portfolio-deck" class="glightbox"><img src="assets/img/deck3/deck3-3.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck3/deck3-4.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck3/deck3-4.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck3/deck3-2.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck3/deck3-2.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/deck3/deck3-1.jpg" data-gallery="portfolio-deck" class="glightbox d-none"><img src="assets/img/deck3/deck3-1.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/deck3/deck3-3.jpg" data-gallery="portfolio-deck" class="glightbox">
+                  <img src="assets/img/deck3/deck3-3.jpg" class="img-fluid" alt="Brampton Deck Design Project" loading="lazy">
+                </a>
+                <a href="assets/img/deck3/deck3-4.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck3/deck3-4.jpg" class="img-fluid" alt="Additional Brampton Deck" loading="lazy">
+                </a>
+                <a href="assets/img/deck3/deck3-2.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck3/deck3-2.jpg" class="img-fluid" alt="Additional Brampton Deck" loading="lazy">
+                </a>
+                <a href="assets/img/deck3/deck3-1.jpg" data-gallery="portfolio-deck" class="glightbox d-none">
+                  <img src="assets/img/deck3/deck3-1.jpg" class="img-fluid" alt="Additional Brampton Deck" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Brampton Deck Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Fence (Brampton) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fence">
               <div class="portfolio-content h-100">
-                <a href="assets/img/fence1/fence32.jpg" data-gallery="portfolio-fence" class="glightbox"><img src="assets/img/fence1/fence32.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/fence1/fence31.jpg" data-gallery="portfolio-fence" class="glightbox d-none"><img src="assets/img/fence1/fence31.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/fence1/fence33.jpg" data-gallery="portfolio-fence" class="glightbox d-none"><img src="assets/img/fence1/fence33.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/fence1/fence32.jpg" data-gallery="portfolio-fence" class="glightbox">
+                  <img src="assets/img/fence1/fence32.jpg" class="img-fluid" alt="Brampton Fence Design Project" loading="lazy">
+                </a>
+                <a href="assets/img/fence1/fence31.jpg" data-gallery="portfolio-fence" class="glightbox d-none">
+                  <img src="assets/img/fence1/fence31.jpg" class="img-fluid" alt="Additional Brampton Fence" loading="lazy">
+                </a>
+                <a href="assets/img/fence1/fence33.jpg" data-gallery="portfolio-fence" class="glightbox d-none">
+                  <img src="assets/img/fence1/fence33.jpg" class="img-fluid" alt="Additional Brampton Fence" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Brampton Fence Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Fence (Vaughan) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fence">
               <div class="portfolio-content h-100">
-                <a href="assets/img/fence3/fence14.jpg" data-gallery="portfolio-fence" class="glightbox"><img src="assets/img/fence3/fence14.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/fence3/fence12.jpg" data-gallery="portfolio-fence" class="glightbox d-none"><img src="assets/img/fence3/fence12.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/fence3/fence11.jpg" data-gallery="portfolio-fence" class="glightbox d-none"><img src="assets/img/fence3/fence11.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/fence3/fence13.jpg" data-gallery="portfolio-fence" class="glightbox d-none"><img src="assets/img/fence3/fence13.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/fence3/fence14.jpg" data-gallery="portfolio-fence" class="glightbox">
+                  <img src="assets/img/fence3/fence14.jpg" class="img-fluid" alt="Vaughan Fence Design Project" loading="lazy">
+                </a>
+                <a href="assets/img/fence3/fence12.jpg" data-gallery="portfolio-fence" class="glightbox d-none">
+                  <img src="assets/img/fence3/fence12.jpg" class="img-fluid" alt="Additional Vaughan Fence" loading="lazy">
+                </a>
+                <a href="assets/img/fence3/fence11.jpg" data-gallery="portfolio-fence" class="glightbox d-none">
+                  <img src="assets/img/fence3/fence11.jpg" class="img-fluid" alt="Additional Vaughan Fence" loading="lazy">
+                </a>
+                <a href="assets/img/fence3/fence13.jpg" data-gallery="portfolio-fence" class="glightbox d-none">
+                  <img src="assets/img/fence3/fence13.jpg" class="img-fluid" alt="Additional Vaughan Fence" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Vaughan Fence Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Fence (Mississauga) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fence">
               <div class="portfolio-content h-100">
-                <a href="assets/img/fence2/fence44.jpg" data-gallery="portfolio-fence" class="glightbox"><img src="assets/img/fence2/fence44.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/fence2/fence42.jpg" data-gallery="portfolio-fence" class="glightbox d-none"><img src="assets/img/fence2/fence42.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/fence2/fence41.jpg" data-gallery="portfolio-fence" class="glightbox d-none"><img src="assets/img/fence2/fence41.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/fence2/fence43.jpg" data-gallery="portfolio-fence" class="glightbox d-none"><img src="assets/img/fence2/fence43.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/fence2/fence44.jpg" data-gallery="portfolio-fence" class="glightbox">
+                  <img src="assets/img/fence2/fence44.jpg" class="img-fluid" alt="Mississauga Fence Design Project" loading="lazy">
+                </a>
+                <a href="assets/img/fence2/fence42.jpg" data-gallery="portfolio-fence" class="glightbox d-none">
+                  <img src="assets/img/fence2/fence42.jpg" class="img-fluid" alt="Additional Mississauga Fence" loading="lazy">
+                </a>
+                <a href="assets/img/fence2/fence41.jpg" data-gallery="portfolio-fence" class="glightbox d-none">
+                  <img src="assets/img/fence2/fence41.jpg" class="img-fluid" alt="Additional Mississauga Fence" loading="lazy">
+                </a>
+                <a href="assets/img/fence2/fence43.jpg" data-gallery="portfolio-fence" class="glightbox d-none">
+                  <img src="assets/img/fence2/fence43.jpg" class="img-fluid" alt="Additional Mississauga Fence" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Mississauga Fence Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Gate (Brampton) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gate">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Gate/gate11.jpg" data-gallery="portfolio-gate" class="glightbox"><img src="assets/img/Gate/gate11.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Gate/gate11.jpg" data-gallery="portfolio-gate" class="glightbox">
+                  <img src="assets/img/Gate/gate11.jpg" class="img-fluid" alt="Brampton Gate Design Project" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Brampton Gate Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Gate (Mississauga) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gate">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Gate/gate13.jpg" data-gallery="portfolio-gate" class="glightbox"><img src="assets/img/Gate/gate13.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Gate/gate13.jpg" data-gallery="portfolio-gate" class="glightbox">
+                  <img src="assets/img/Gate/gate13.jpg" class="img-fluid" alt="Mississauga Gate Design Project" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Mississauga Gate Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Gate (Vaughan) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gate">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Gate/gate12.jpg" data-gallery="portfolio-gate" class="glightbox"><img src="assets/img/Gate/gate12.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Gate/gate12.jpg" data-gallery="portfolio-gate" class="glightbox">
+                  <img src="assets/img/Gate/gate12.jpg" class="img-fluid" alt="Vaughan Gate Design Project" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Vaughan Gate Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Gazebo (Brampton) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gazebo">
               <div class="portfolio-content h-100">
-                <a href="assets/img/gazebo/gazebo1.jpg" data-gallery="portfolio-gazebo" class="glightbox"><img src="assets/img/gazebo/gazebo1.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/gazebo/gazebo1.jpg" data-gallery="portfolio-gazebo" class="glightbox">
+                  <img src="assets/img/gazebo/gazebo1.jpg" class="img-fluid" alt="Brampton Gazebo Design Project" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Brampton Gazebo Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Gazebo (Mississauga) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gazebo">
               <div class="portfolio-content h-100">
-                <a href="assets/img/gazebo/gazebo6.webp" data-gallery="portfolio-gazebo" class="glightbox"><img src="assets/img/gazebo/gazebo6.webp" class="img-fluid" alt=""></a>
+                <a href="assets/img/gazebo/gazebo6.webp" data-gallery="portfolio-gazebo" class="glightbox">
+                  <img src="assets/img/gazebo/gazebo6.webp" class="img-fluid" alt="Mississauga Gazebo Design Project" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Mississauga Gazebo Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Gazebo (Vaughan) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gazebo">
               <div class="portfolio-content h-100">
-                <a href="assets/img/gazebo/gazebo2.jpg" data-gallery="portfolio-gazebo" class="glightbox"><img src="assets/img/gazebo/gazebo2.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/gazebo/gazebo2.jpg" data-gallery="portfolio-gazebo" class="glightbox">
+                  <img src="assets/img/gazebo/gazebo2.jpg" class="img-fluid" alt="Vaughan Gazebo Design Project" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Vaughan Gazebo Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Pergola (Brampton) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pergola">
               <div class="portfolio-content h-100">
-                <a href="assets/img/pergola/pergola1.jpg" data-gallery="portfolio-pergola" class="glightbox"><img src="assets/img/pergola/pergola1.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/pergola/pergola1.jpg" data-gallery="portfolio-pergola" class="glightbox">
+                  <img src="assets/img/pergola/pergola1.jpg" class="img-fluid" alt="Brampton Pergola Design Project" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Brampton Pergola Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Pergola (Mississauga) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pergola">
               <div class="portfolio-content h-100">
-                <a href="assets/img/pergola/pergola21.jpg" data-gallery="portfolio-pergola" class="glightbox"><img src="assets/img/pergola/pergola21.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/pergola/pergola22.jpg" data-gallery="portfolio-pergola" class="glightbox d-none"><img src="assets/img/pergola/pergola22.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/pergola/pergola23.jpg" data-gallery="portfolio-pergola" class="glightbox d-none"><img src="assets/img/pergola/pergola23.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/pergola/pergola24.jpg" data-gallery="portfolio-pergola" class="glightbox d-none"><img src="assets/img/pergola/pergola24.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/pergola/pergola21.jpg" data-gallery="portfolio-pergola" class="glightbox">
+                  <img src="assets/img/pergola/pergola21.jpg" class="img-fluid" alt="Mississauga Pergola Design Project" loading="lazy">
+                </a>
+                <a href="assets/img/pergola/pergola22.jpg" data-gallery="portfolio-pergola" class="glightbox d-none">
+                  <img src="assets/img/pergola/pergola22.jpg" class="img-fluid" alt="Additional Mississauga Pergola" loading="lazy">
+                </a>
+                <a href="assets/img/pergola/pergola23.jpg" data-gallery="portfolio-pergola" class="glightbox d-none">
+                  <img src="assets/img/pergola/pergola23.jpg" class="img-fluid" alt="Additional Mississauga Pergola" loading="lazy">
+                </a>
+                <a href="assets/img/pergola/pergola24.jpg" data-gallery="portfolio-pergola" class="glightbox d-none">
+                  <img src="assets/img/pergola/pergola24.jpg" class="img-fluid" alt="Additional Mississauga Pergola" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Mississauga Pergola Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Roof (Brampton) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-roof">
               <div class="portfolio-content h-100">
-                <a href="assets/img/roof/roof32.jpg" data-gallery="portfolio-roof" class="glightbox"><img src="assets/img/roof/roof32.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/roof/roof31.jpg" data-gallery="portfolio-roof" class="glightbox d-none"><img src="assets/img/roof/roof31.jpg" class="img-fluid" alt=""></a>
-                <a href="assets/img/roof/roof33.jpg" data-gallery="portfolio-roof" class="glightbox d-none"><img src="assets/img/roof/roof33.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/roof/roof32.jpg" data-gallery="portfolio-roof" class="glightbox">
+                  <img src="assets/img/roof/roof32.jpg" class="img-fluid" alt="Brampton Roof Design Project" loading="lazy">
+                </a>
+                <a href="assets/img/roof/roof31.jpg" data-gallery="portfolio-roof" class="glightbox d-none">
+                  <img src="assets/img/roof/roof31.jpg" class="img-fluid" alt="Additional Brampton Roof" loading="lazy">
+                </a>
+                <a href="assets/img/roof/roof33.jpg" data-gallery="portfolio-roof" class="glightbox d-none">
+                  <img src="assets/img/roof/roof33.jpg" class="img-fluid" alt="Additional Brampton Roof" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Brampton Roof Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+            <!-- Portfolio Item: Roof (Mississauga) -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-roof">
               <div class="portfolio-content h-100">
-                <a href="assets/img/roof/roof21.jpg" data-gallery="portfolio-roof" class="glightbox"><img src="assets/img/roof/roof21.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/roof/roof21.jpg" data-gallery="portfolio-roof" class="glightbox">
+                  <img src="assets/img/roof/roof21.jpg" class="img-fluid" alt="Mississauga Roof Design Project" loading="lazy">
+                </a>
                 <div class="portfolio-info">
                   <h4>Mississauga Roof Design & Build Project</h4>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- /Portfolio Section -->
-<!-- Services Section -->
-<section id="services" class="services section">
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Our Services</h2>
-  </div><!-- End Section Title -->
 
-  <!-- Services List -->
-  <div class="container">
-    <div class="row gy-4">
-
-      <!-- Service Item - Deck Design & Build -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item">
-          <div class="icon top-center">
-            <i class="bi bi-columns-gap"></i>
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Services</h2>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Service Item - Deck Design & Build -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon top-center">
+                <i class="bi bi-columns-gap"></i>
+              </div>
+              <h3>Deck Design &amp; Build</h3>
+              <p>We proudly build strong, beautiful, and durable outdoor spaces that can transform your exterior living areas and enhance the style of your home.</p>
+              <a href="deck-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
           </div>
-          <h3>Deck Design &amp; Build</h3>
-          <p>We proudly build strong, beautiful, and durable outdoor spaces that can transform your exterior living spaces and enhance the style of your home.</p>
-          <a href="deck-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div><!-- End Service Item -->
-
-      <!-- Service Item - Fence Design & Build -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item">
-          <div class="icon top-center">
-            <i class="bi bi-grid-3x3-gap-fill"></i>
+          <!-- Service Item - Fence Design & Build -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon top-center">
+                <i class="bi bi-grid-3x3-gap-fill"></i>
+              </div>
+              <h3>Fence Design &amp; Build</h3>
+              <p>Enhance privacy and security at your home with our expertly designed fences and custom gates.</p>
+              <a href="fence-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
           </div>
-          <h3>Fence Design &amp; Build</h3>
-          <p>Are you looking for more privacy or extra security at your home? Fences &amp; Gates by ATB Construction Fence &amp; Deck can make all the difference.</p>
-          <a href="fence-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div><!-- End Service Item -->
-
-      <!-- Service Item - Gate Design & Build -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-item">
-          <div class="icon top-center">
-            <i class="bi bi-door-open"></i>
+          <!-- Service Item - Gate Design & Build -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon top-center">
+                <i class="bi bi-door-open"></i>
+              </div>
+              <h3>Gate Design &amp; Build</h3>
+              <p>Enhance the overall look of your backyard with durable, stylish gate designs that provide both security and privacy.</p>
+              <a href="gate-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
           </div>
-          <h3>Gate Design &amp; Build</h3>
-          <p>Crucial to complete the overall design and look of your backyard, gate designs grant privacy and protection while still enhancing your home's exterior. Built to last, ATB Construction offers a variety of styles and sizes of gates.</p>
-          <a href="gate-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div><!-- End Service Item -->
-
-      <!-- Service Item - Gazebo Design & Build -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="service-item">
-          <div class="icon top-center">
-            <i class="bi bi-sun"></i>
+          <!-- Service Item - Gazebo Design & Build -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon top-center">
+                <i class="bi bi-sun"></i>
+              </div>
+              <h3>Gazebo Design &amp; Build</h3>
+              <p>Create an inviting retreat or entertainment spot with our expertly designed gazebos.</p>
+              <a href="gazebo-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
           </div>
-          <h3>Gazebo Design &amp; Build</h3>
-          <p>An oasis in your backyard, a place for retreat and entertainment, gazebos have a special place in our hearts.</p>
-          <a href="gazebo-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div><!-- End Service Item -->
-
-      <!-- Service Item - Pergola Design & Build -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-        <div class="service-item">
-          <div class="icon top-center">
-            <i class="bi bi-tree"></i>
+          <!-- Service Item - Pergola Design & Build -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item">
+              <div class="icon top-center">
+                <i class="bi bi-tree"></i>
+              </div>
+              <h3>Pergola Design &amp; Build</h3>
+              <p>Enhance your outdoor area with a beautiful and functional pergola or garden trellis.</p>
+              <a href="pergola-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
           </div>
-          <h3>Pergola Design &amp; Build</h3>
-          <p>Looking for a beautiful, affordable wood arbor, dining pergola, patio cover, gazebo, or garden trellis?</p>
-          <a href="pergola-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-        </div>
-      </div><!-- End Service Item -->
-
-      <!-- Service Item - Landscaping -->
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-        <div class="service-item">
-          <div class="icon top-center">
-            <i class="bi bi-flower1"></i>
+          <!-- Service Item - Roof Design -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item">
+              <div class="icon top-center">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Roof Design</h3>
+              <p>Combining premium materials and expert craftsmanship to protect and elevate your home’s curb appeal.</p>
+              <a href="roof-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
           </div>
-          <h3>Roof Design</h3>
-          <p>We combine premium materials, expert craftsmanship, and an eye for detail to ensure your roof not only protects your home, but also elevates its curb appeal.</p>
-          <a href="roof-design-build.html" class="read-more"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
         </div>
-      </div><!-- End Service Item -->
+      </div>
+    </section>
+    <!-- /Services Section -->
 
-    </div>
-  </div>
-
-</section><!-- /Services Section -->
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-      </div><!-- End Section Title -->
-
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
           <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5755.636976271042!2d-79.3815798!3d43.838861400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2b4d5e796d03%3A0x38765194abf62558!2s55%20Commerce%20Valley%20Dr%20W%2C%20Thornhill%2C%20ON%20L3T%207V9!5e0!3m2!1sen!2sca!4v1742767662097!5m2!1sen!2sca" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>55 Commerce Valley Dr W. Thornhill ON L3T 7V9</p>
+          <div class="row gy-4">
+            <div class="col-lg-4">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>55 Commerce Valley Dr W. Thornhill ON L3T 7V9</p>
+                </div>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 647 562 7118</p>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+1 647 562 7118</p>
+                </div>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@atbcon.com</p>
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>info@atbcon.com</p>
+                </div>
               </div>
             </div>
 
-          </div>
-
-          <div class="col-lg-8">
-            <form action="/sendEmail" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Name" required>
-                </div>
-                
-                <div class="col-md-6">
-                  <input type="text" name="phoneNumber" class="form-control" placeholder="Phone Number" required>
-                </div>
-                
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
-                </div>
-                
-                <div class="col-md-6">
-                  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-                  <select name="project_type[]" class="form-control js-multi-select" multiple required>
-                    <option value="deck">Deck</option>
-                    <option value="fence">Fence</option>
-                    <option value="gate">Gate</option>
-                    <option value="gazebo">Gazebo</option>
-                    <option value="pergola">Pergola</option>
-                    <option value="roof">Roof</option>
-                  </select>
-                  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-                  <script>
-                    $(document).ready(function() {
-                      $('.js-multi-select').select2({
-                        placeholder: "Select Project Type", 
+            <div class="col-lg-8">
+              <form action="/sendEmail" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+                  <div class="col-md-12">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input id="phoneNumber" type="text" name="phoneNumber" class="form-control" placeholder="Your Phone Number" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="project_type">Select Project Type</label>
+                    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+                    <select id="project_type" name="project_type[]" class="form-control js-multi-select" multiple required>
+                      <option value="deck">Deck</option>
+                      <option value="fence">Fence</option>
+                      <option value="gate">Gate</option>
+                      <option value="gazebo">Gazebo</option>
+                      <option value="pergola">Pergola</option>
+                      <option value="roof">Roof</option>
+                    </select>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+                    <script>
+                      $(document).ready(function() {
+                        $('.js-multi-select').select2({
+                          placeholder: "Select Project Type", 
+                        });
                       });
-                    });
-                  </script>
+                    </script>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="projectBudget">Project Budget (Approx.)</label>
+                    <input id="projectBudget" type="text" name="projectBudget" class="form-control" placeholder="e.g., $15,000">
+                  </div>
+                  <div class="col-md-12">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" class="form-control" name="message" rows="6" placeholder="Details of project (e.g., 250 sqft. deck, 95 lnft. fence, etc.)" required></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <button type="submit">Send Message</button>
+                  </div>
                 </div>
-
-                <div class="col-md-6">
-                  <input type="text" name="projectBudget" class="form-control" placeholder="Project Budget (Approx.)">
-                </div>
-                
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Details of projects (250 sqft. deck, 95 lnft. fence etc.)" required></textarea>
-                </div>                
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
+              </form>
+            </div>
+          </div>
         </div>
-
       </div>
-
-    </section><!-- /Contact Section -->
-
+    </section>
+    <!-- /Contact Section -->
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -516,6 +606,7 @@
         <div class="copyright">
           <span>Copyright</span> <strong class="px-1 sitename">ATB Construction Group</strong> <span>All Rights Reserved</span>
         </div>
+      </div>
     </div>
   </footer>
 
@@ -536,7 +627,5 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
